@@ -1,0 +1,19 @@
+{
+    // Путь к исполняемому файлу PHP на вашем компьютере (нужен для валидации)
+    "php.validate.executablePath": "D:/Programming/php-8.4.1/php.exe",
+
+    // Включаем авто-выравнивание кода от Intelephense при сохранении
+    // "editor.formatOnSave": true,
+
+    // Отключаем встроенное автодополнение, если используем Intelephense
+    "php.suggest.basic": false,
+    
+    // Это защитит от ситуации, когда плагин подсказывает функции из новых версий, а ваш сервер их не поддерживает
+    "intelephense.environment.phpVersion": "8.2.0",
+
+    // Intelephense ищет vendor относительно корня открытой папки в редакторе.
+    // Поэтмому настроим Intelephense через этот файл указав где находится vendor
+    "intelephense.environment.includePaths": [
+        "core/vendor"
+    ]
+}
